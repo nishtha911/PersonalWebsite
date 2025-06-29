@@ -4,25 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nishtha's Site</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Top Section -->
   <div class="top-container">
     <div class="title-text">
       <h1>Hi. It's Nishtha</h1>
     </div>
   </div>
 
+  <!-- Introduction Section -->
   <div class="introduction">
     <div class="px-4 py-5 my-5 text-center">
       <img class="profile-img" src="./images/profile.jpg" alt="Nishtha">
-      <h2>Hey There</h2>
+      <h2 class="font-effect-3d-float">Hey There</h2>
       <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">I am a 19-year-old engineering student passionate about AI and Data Science.</p>
+        <p class="intro">I am a 19-year-old engineering student passionate about AI and Data Science.</p>
       </div>
     </div>
   </div>
+
+  <!--Hobbies-->
+<div class="container px-4 py-5" id="pasta-cards"> 
+    <h2 class="pb-2 border-bottom">I 💗 Cooking 🍝</h2>
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"> 
+      <div class="col"> 
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('arrabiata.png'); background-position: center;"> 
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Arrabiata</h3> 
+            <ul class="d-flex list-unstyled mt-auto"> 
+              <li class="d-flex align-items-center">
+                <small>Spicy tomato sauce with garlic and chili</small>
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+      
+      <div class="col"> 
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('pesto.png'); background-position: center;"> 
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pesto</h3> 
+            <ul class="d-flex list-unstyled mt-auto"> 
+              <li class="d-flex align-items-center">
+                <small>Fresh basil, pine nuts, parmesan and olive oil</small>
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+      
+      <div class="col"> 
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('aglio.png'); background-position: center;"> 
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"> 
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Aglio e Olio</h3> 
+            <ul class="d-flex list-unstyled mt-auto"> 
+              <li class="d-flex align-items-center">
+                <small>Simple garlic and olive oil with chili flakes</small>
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+</div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-jy5rOvOeYgHdYbK4X1EXtvSMq2lbOY7PGCQlEImT6X45g5I8rPlYVsm9OaDQe+6a" crossorigin="anonymous"></script>
 </body>
 </html>
