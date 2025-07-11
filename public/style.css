@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+/* Top Section */
+.top-container {
+  background-image: url("./images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 5.625rem;
+  padding-bottom: 60px;
+  font-family: "Tangerine", cursive;
+  text-shadow: 2px 2px 4px rgba(4, 47, 43, 0.4);
+  animation: fadeIn 2s ease-in-out; 
+}
+
+/* Introduction */
+.introduction {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding-top: 40px;
+}
+
+.profile-img {
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.font-effect-3d-float {
+  color: teal;
+  font-size: 3rem;
+  font-family: "Pacifico", cursive;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  width: 30%;
+  margin: auto;
+  color: #333;
+}
+
+/* Social Icons */
+.social-link svg {
+  fill: currentColor;
+  color: #212529;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover svg {
+  transform: scale(1.2);
+  color: teal;
+}
+
+/* Card Container */
+#pasta-cards {
+  background-color: #fff;
+}
+
+/* Pasta Card Styling */
+.card-cover {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.overlay-text h3 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-text small {
+  display: block;
+  margin-top: 5px;
+  font-size: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
+footer {
+  font-size: 1.1rem;
+  background-color: #212529;
+  color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+} 
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .intro {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .font-effect-3d-float {
+    font-size: 2rem;
+  }
+
+  .card-cover {
+    height: 220px;
+  }
+
+  .overlay-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .overlay-text small {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "tunnel": "^0.0.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishtha911/PersonalWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishtha911/PersonalWebsite/issues"
+  },
+  "homepage": "https://github.com/nishtha911/PersonalWebsite#readme",
+  "description": ""
+}
